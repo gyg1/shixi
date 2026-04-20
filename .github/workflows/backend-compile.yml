@@ -1,0 +1,30 @@
+name: backend-compile
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  backend-compile:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: CeuimDataScreenSpringboot
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: maven
+
+      - name: Compile backend
+        run: mvn -B -DskipTests compile
