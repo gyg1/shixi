@@ -1,0 +1,63 @@
+spring:
+  application:
+    name: cityplan
+
+  # PostgreSQL + PostGIS 数据库配置
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cityplan?currentSchema=public&stringtype=unspecified
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 300000
+      connection-timeout: 20000
+
+  # 文件上传
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+# MyBatis Plus 配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: true
+      logic-not-delete-value: false
+      id-type: auto
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: org.example.cityplan.entity
+
+# JWT 配置
+jwt:
+  secret: CityPlanSecretKey2024ForThreeDimensionalUrbanPlanningManagementSystem
+  expiration: 86400000
+
+# 服务器配置
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+# 文件上传目录
+file:
+  upload-dir: uploads/projects
+
+# 天地图配置
+tianditu:
+  token: abf1d23efb709a79bb93553d8410ba24
+
+# 日志配置
+logging:
+  level:
+    org.example.cityplan: DEBUG
+    org.springframework.security: DEBUG

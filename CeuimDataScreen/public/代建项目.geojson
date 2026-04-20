@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "代建项目",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "name": "代建项目一" }, "geometry": { "type": "Point", "coordinates": [ 114.548246127652902, 38.100439055883065 ] } },
+{ "type": "Feature", "properties": { "id": 2, "name": "代建项目二" }, "geometry": { "type": "Point", "coordinates": [ 114.58944795816241, 38.04347898003261 ] } },
+{ "type": "Feature", "properties": { "id": 3, "name": "代建项目三" }, "geometry": { "type": "Point", "coordinates": [ 114.491970456713105, 37.999146039367723 ] } },
+{ "type": "Feature", "properties": { "id": 4, "name": "代建项目四" }, "geometry": { "type": "Point", "coordinates": [ 114.450768626203569, 38.078293186066965 ] } },
+{ "type": "Feature", "properties": { "id": 5, "name": "代建项目五" }, "geometry": { "type": "Point", "coordinates": [ 114.588443035467066, 37.984098412870225 ] } }
+]
+}

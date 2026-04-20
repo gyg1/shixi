@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "市政类项目",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "name": "市政项目一" }, "geometry": { "type": "Point", "coordinates": [ 114.46785231202459, 38.033189795049672 ] } },
+{ "type": "Feature", "properties": { "id": 2, "name": "市政项目二" }, "geometry": { "type": "Point", "coordinates": [ 114.57437411773212, 37.989642634377688 ] } },
+{ "type": "Feature", "properties": { "id": 3, "name": "市政项目三" }, "geometry": { "type": "Point", "coordinates": [ 114.622610407109093, 38.044270395922602 ] } },
+{ "type": "Feature", "properties": { "id": 4, "name": "市政项目四" }, "geometry": { "type": "Point", "coordinates": [ 114.599497185115951, 38.09569407716333 ] } },
+{ "type": "Feature", "properties": { "id": 5, "name": "市政项目五" }, "geometry": { "type": "Point", "coordinates": [ 114.531162441831881, 38.068008894618195 ] } }
+]
+}
