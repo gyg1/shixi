@@ -1,0 +1,25 @@
+# <type>(<scope>): <subject>
+#
+# type:
+# feat     新功能
+# fix      缺陷修复
+# refactor 重构
+# docs     文档
+# style    样式或格式
+# test     测试
+# build    构建或依赖
+# ci       CI/CD
+# chore    杂项
+#
+# scope 示例:
+# frontend / backend / map / project / danger / auth / docs / repo
+#
+# subject 要求:
+# 1. 使用祈使句
+# 2. 不超过 72 个字符
+# 3. 不以句号结尾
+#
+# 示例:
+# feat(project): add category filter for project list
+# fix(map): repair user map view compile errors
+

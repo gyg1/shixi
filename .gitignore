@@ -11,6 +11,7 @@ uploads/
 *.log
 *.txt
 *.iml
+!.gitmessage.txt
 
 CeuimDataScreen/.git
 CeuimDataScreen/.idea/
